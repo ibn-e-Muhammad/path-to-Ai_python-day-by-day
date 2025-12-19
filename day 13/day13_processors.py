@@ -39,7 +39,12 @@ class DataProcessor(BaseProcessor):
                 "max": None
             }
         positives = [n for n in self.data if n > 0]
-        print(positives)
+        return {
+            "positives": len(positives),
+            "average": sum(self.data) / len(self.data),
+            "min": min(self.data),
+            "max": max(self.data)
+        }
 
     def count_positive(self):
         """
