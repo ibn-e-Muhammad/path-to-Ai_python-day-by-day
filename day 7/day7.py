@@ -1,0 +1,1 @@
+### Just reviewed the code from day 6 through chatgpt, learned how brute force my logic was and how to improve it in the future. ###
