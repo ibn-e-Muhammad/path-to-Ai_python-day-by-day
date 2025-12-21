@@ -3,7 +3,13 @@ from exceptions import InvalidDataError
 from day13_base_processor import BaseProcessor
 
 class DataProcessor(BaseProcessor):
-
+    def __init__(self, data):
+    # We store the strategy "in our pocket" to use later
+    
+    
+    # Call the parent (BaseProcessor) to handle validation and self.data setup
+        super().__init__(data)
+        
     def _validate(self, data):
         """
         Constructor: This runs when you create the object.
