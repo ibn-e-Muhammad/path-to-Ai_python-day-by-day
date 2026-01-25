@@ -29,18 +29,18 @@ def main():
 
     print("--- Starting Processing ---")
 
-    # 1. Test Number Processor and Database Input
+    # 1. Test Number Processor and Database Input 
     for data in test_inputs:
         print(f"\nProcessing input: {data}")
         
-        # Try DataProcessor
+        # Try DataProcessor 1
         try:
             processor = DataProcessor(data)
             print(f"DataProcessor Output: {processor.process()}")
         except InvalidDataError as e:
             print(f"DataProcessor skipped: {e}")
             
-        # Try TextCleaner
+        # Try TextCleaner 2
         try:
             str_clean = TextCleaner(data)
             print(f"TextCleaner Output: {str_clean.process()}")
