@@ -1,0 +1,47 @@
+import logging
+import sqlite3
+from exceptions import InvalidDataError
+
+
+class DatabaseHandler:
+    def __init__(self, db_name="processedData_db"):
+        self.db_name = db_name
+        self.connection = None
+        self.cursor = None
+        self._connect()
+        self._create_table()
+
+#connect
+
+    def connect(self):
+        try:
+            self.connection = sqlite3.connect(self.db_name)
+            self.cursor = self.connection.cursor()
+            logging.info("Database successfully connected.")
+        except:
+            logging.critical("Failed to connect to the database.")
+            raise
+
+#create table
+    def create_table(self):
+        if self.connection:
+            try:
+                self.cursor.execute('''
+                        create table if not exists Processed_Data(
+                                    id Integer Primary Key,
+                                    Positives Integer,
+                                    Average float,
+                                    Min Integer,
+                                    Max Integer
+                                    )
+''')
+                self.connection.commit()
+                logging.info("Table 'Processed_Data' is ready.")
+            except InvalidDataError as e:
+                logging.critical(f"Table creation failed. Error: {e}")
+                raise
+
+#Insert data
+
+    def Insert_data(self):
+        pass
