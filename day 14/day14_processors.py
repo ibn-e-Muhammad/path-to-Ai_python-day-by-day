@@ -1,6 +1,7 @@
 import logging
 from exceptions import InvalidDataError
 from day14_base_processor import BaseProcessor
+from day14_database_methods import DatabaseHandler
 
 class DataProcessor(BaseProcessor):
     def __init__(self, data):
@@ -45,9 +46,20 @@ class DataProcessor(BaseProcessor):
                 "max": None
             }
         positives = [n for n in self.data if n > 0]
-        return {
+        results = {
             "positives": len(positives),
             "average": sum(self.data) / len(self.data),
             "min": min(self.data),
             "max": max(self.data)
-        }  
+            }
+        db_pointer = DatabaseHandler()
+        db_pointer.Insert_data(
+            results["positives"],
+            results["average"],
+            results["min"],
+            results["max"]
+        )
+        db_pointer.display_data()
+        db_pointer.close()
+        return results
+        
