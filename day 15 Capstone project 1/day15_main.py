@@ -2,7 +2,7 @@ import logging
 import os
 from exceptions import InvalidDataError
 #from day14_cleaners import TextCleaner
-from day14_processors import DataProcessor
+#from day15_processors import DataProcessor
 
 
 #logging
@@ -10,7 +10,7 @@ logging.basicConfig(
     filename = os.path.join(os.path.dirname(__file__), "app.log"),
     level=logging.DEBUG,
     format = "%(asctime)s, %(levelname)s, %(message)s",
-    filemode="w"
+    filemode="a"
 )
 #main orchestration
 
