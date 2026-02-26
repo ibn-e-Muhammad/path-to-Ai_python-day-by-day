@@ -181,4 +181,26 @@ Every study day follows the same structure to fight the memory leak problem:
 
 ---
 
+## 🕐 The Real Purpose of the Day-by-Day Structure
+
+> _"The labels are a map, not a treadmill."_
+
+Here's something important to understand about how this journey is structured:
+
+**The day-by-day breakdown isn't meant to pressure you into finishing exact topics on exact days.** It's a framework to help you see where you are and where you're going. The "Day 1", "Day 2" labels exist for one reason — to differentiate stages of learning and show clear progression over time. They are milestones, not deadlines.
+
+### What this means in practice:
+
+- 📌 **You don't have to finish Day 5 on the fifth day.** If Day 3 takes you 4 days to really internalize — that's fine. Stay there until it clicks.
+- 📌 **There is no falling behind.** There is only the work you've done and the work left to do. The only failure is stopping entirely.
+- 📌 **Slow progress is still progress.** A concept you genuinely understand after 3 days is worth more than 5 concepts you half-learned in a rush.
+
+### The one rule that doesn't bend:
+
+**Be consistent. Show up every single day** — even if it's just for 30 minutes of review. The daily time commitment mentioned at the start of this plan (3–5 hours/day) is your target, and maintaining that rhythm is what separates people who finish from people who don't. The schedule is forgiving on pace, but unforgiving on consistency.
+
+> Think of it like building a wall. It doesn't matter if you lay 10 bricks one day and 20 the next. What matters is that you never miss a day. Skip days, and the cement cracks.
+
+---
+
 ---
