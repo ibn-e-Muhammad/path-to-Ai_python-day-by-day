@@ -1,24 +1,37 @@
-# Phase 1 — Advanced Python & Applied AI (Day 16+)
+# Phase 1 — The Data Mechanic (Day 16+)
 
-> **Goal:** Build on the solid foundation from Phase 0 and push into more advanced Python concepts, real-world application patterns, and practical AI/ML tooling.
+> **Goal:** You cannot model what you cannot clean. Master the numerical and data tools that every ML pipeline is built on — NumPy, Pandas, visualization, and statistics.
 
 ---
 
 ## 🗺️ Phase Overview
 
-| Day(s) | Theme           | Key Skill       |
-| ------ | --------------- | --------------- |
-| Day 16 | _(In Progress)_ | _(Coming soon)_ |
+| Day(s) | Theme               | Key Skill                                                    | Status      |
+| ------ | ------------------- | ------------------------------------------------------------ | ----------- |
+| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implentation in earlier code.                      | ✅ Complete |
+| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series, inplementation in earlier code. | ⬜ Implementation is left |
 
 ---
 
 ## 📅 Day-by-Day Breakdown
 
-### Day 16 — _(In Progress)_
+### Day 16 — NumPy: Arrays, Operations & Linear Algebra
 
-**Focus:** This day is currently being set up. Content and topics will be documented here as work progresses.
+**Focus:** Shifted from software engineering (Phase 0) to numerical computing. Completed 10 structured NumPy assignments covering the full range of array operations.
 
-📁 Files: `day16_main.py`, `exceptions.py`
+**Topics:** Array creation & manipulation, indexing & slicing, element-wise operations, statistical ops & Z-score normalization, broadcasting, linear algebra (`linalg.det`, `inv`, `eig`), reshape/flatten, fancy & boolean indexing, structured arrays, masked arrays (`numpy.ma`).
+
+📁 Folder: `day 16/`
+
+---
+
+### Day 17 — Pandas: DataFrames, Cleaning, Aggregation & Time Series
+
+**Focus:** First contact with Pandas. Completed 6 structured assignments covering the full Pandas workflow from raw data to time-based analysis.
+
+**Topics:** DataFrame creation & custom indexing, computing derived columns & axis-wise sums, data cleaning with `fillna` and `dropna`, groupby aggregation (`sum`, `mean`), merging & concatenating DataFrames, time series with datetime indexes, `resample()` for monthly means, and `rolling()` for 7-day averages.
+
+📁 Folder: `day 17/`
 
 ---
 
@@ -26,12 +39,12 @@
 
 Building on the complete Python foundation from Phase 0, Phase 1 targets:
 
-| Area                        | Topics to Cover                                                     |
-| --------------------------- | ------------------------------------------------------------------- |
-| **Advanced Python**         | Decorators, generators, context managers, async/await               |
-| **Data Handling**           | `pandas`, `numpy`, working with real datasets (CSV, JSON, APIs)     |
-| **Machine Learning Basics** | `scikit-learn` pipelines, training/testing splits, model evaluation |
-| **AI Tooling**              | Working with LLM APIs, prompt engineering, embeddings               |
-| **Project Work**            | Larger, multi-day capstone projects integrating all skills          |
+| Area              | Topics to Cover                                           | Status       |
+| ----------------- | --------------------------------------------------------- | ------------ |
+| **NumPy**         | Arrays, linear algebra, broadcasting, masked arrays       | ✅ Done      |
+| **Pandas**        | DataFrames, cleaning, groupby, merging, time series       | ✅ Done      |
+| **Visualization** | `matplotlib`, `seaborn` — distributions, outliers, charts | ⬜ Coming up |
+| **Statistics**    | Probability, Z-scores, correlations (`scipy`)             | ⬜ Coming up |
+| **Capstone 2**    | The "Automated Analyst" — auto-report from any CSV        | ⬜ Coming up |
 
-> This section will be updated day-by-day as Phase 1 progresses.
+> This section is updated day-by-day as Phase 1 progresses.
