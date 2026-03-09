@@ -6,10 +6,10 @@
 
 ## 🗺️ Phase Overview
 
-| Day(s) | Theme               | Key Skill                                                    | Status      |
-| ------ | ------------------- | ------------------------------------------------------------ | ----------- |
-| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implentation in earlier code.                      | ✅ Complete |
-| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series, inplementation in earlier code. | ⬜ Implementation is left |
+| Day(s) | Theme               | Key Skill                                                                                 | Status      |
+| ------ | ------------------- | ----------------------------------------------------------------------------------------- | ----------- |
+| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implementation in LifeLogger                     | ✅ Complete |
+| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series + Pandas/NumPy in LifeLogger | ✅ Complete |
 
 ---
 
@@ -25,11 +25,13 @@
 
 ---
 
-### Day 17 — Pandas: DataFrames, Cleaning, Aggregation & Time Series
+### Day 17 — Pandas: DataFrames, Cleaning, Aggregation & Time Series + LifeLogger Integration
 
-**Focus:** First contact with Pandas. Completed 6 structured assignments covering the full Pandas workflow from raw data to time-based analysis.
+**Focus:** Full Pandas practice (6 assignments) followed by integrating Pandas and NumPy directly into the LifeLogger project built in Phase 0.
 
-**Topics:** DataFrame creation & custom indexing, computing derived columns & axis-wise sums, data cleaning with `fillna` and `dropna`, groupby aggregation (`sum`, `mean`), merging & concatenating DataFrames, time series with datetime indexes, `resample()` for monthly means, and `rolling()` for 7-day averages.
+**Practice topics:** DataFrame creation & custom indexing, derived columns & axis-wise sums, data cleaning (`fillna`, `dropna`), groupby aggregation, merging & concatenating DataFrames, time series with datetime indexes, `resample()` for monthly means, `rolling()` for 7-day averages.
+
+**Implementation:** The LifeLogger `DatabaseHandler` was upgraded to use `pd.read_sql_query()` to load stored sessions into a DataFrame, `np.sum()`/`np.mean()` to compute total and average time logged, and `df.groupby('Topic')['Time'].sum()` to break down time spent per topic.
 
 📁 Folder: `day 17/`
 

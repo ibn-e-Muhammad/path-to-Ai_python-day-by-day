@@ -1,8 +1,8 @@
-# Day 17: Introduction to Pandas — DataFrames, Cleaning, Aggregation & Time Series
+# Day 17: Pandas Practice + LifeLogger Integration
 
 ## Overview
 
-Day 17 is the first full Pandas day of Phase 1. After getting comfortable with NumPy's array model, the focus shifts to **DataFrames** — the primary data structure for everything in data science and ML. The day is structured as 6 progressive assignments, going from constructing DataFrames from scratch all the way to working with time-indexed data and rolling averages. This wraps up the Python practice phase — next step is implementing it all in a real project.
+Day 17 has two parts. First: 6 structured Pandas assignments covering the full DataFrame workflow — from creation to time series analysis. Second: taking everything learned (Pandas and NumPy) and integrating it directly into the **LifeLogger** project built back in Phase 0. The `DatabaseHandler` class was upgraded to load data with Pandas, compute stats with NumPy, and produce per-topic breakdowns with `groupby`. This marks the end of the standalone Python/data practice — it all lives inside real code now.
 
 ---
 
@@ -47,9 +47,19 @@ Day 17 is the first full Pandas day of Phase 1. After getting comfortable with N
 
 ---
 
-## Closing Note
+## LifeLogger Integration
 
-This wraps up the structured Python/Pandas practice portion. The goal from here is to take everything learned — NumPy arrays, DataFrame operations, cleaning, groupby, time series — and plug it into the real project built during Phase 0.
+After the practice assignments, Pandas and NumPy were integrated directly into the LifeLogger project. Key upgrades made to `day17_database_methods.py`:
+
+- **`pd.read_sql_query()`** — fetches the entire `LifeLogger_Data` table from SQLite straight into a DataFrame instead of raw tuple lists
+- **`np.sum()` / `np.mean()`** — computes total hours logged and average time per session from the `Time` column as a NumPy array
+- **`df.groupby('Topic')['Time'].sum()`** — aggregates time spent per topic and prints a clean per-topic summary
+
+The rest of the project architecture (OOP classes, logging, custom exceptions, SQLite) carries over unchanged from Phase 0 — this day just upgraded the data-handling layer to use proper Pandas/NumPy tooling.
+
+---
+
+## Closing Note
 
 > _"Done with what one would need to practice to get familiar with the working of Pandas and not mess up the logic or freak out when you don't understand the code your AI gave you. The rest is that you can take help from the AI but always know what you are doing and what your code is also doing."_
 
@@ -58,3 +68,8 @@ This wraps up the structured Python/Pandas practice portion. The goal from here 
 ## Code Files
 
 - `practice.ipynb`: All 6 Pandas assignments with full outputs
+- `day17_main.py`: Entry point — orchestrates data collection and display
+- `day17_data_collector.py`: `DataCollector` class — CLI input, validation, and DB writes
+- `day17_database_methods.py`: `DatabaseHandler` class — upgraded with Pandas/NumPy for data retrieval and stats
+- `exceptions.py`: Custom exception classes
+- `app.log`: Runtime log output
