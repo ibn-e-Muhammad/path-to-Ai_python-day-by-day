@@ -6,10 +6,11 @@
 
 ## 🗺️ Phase Overview
 
-| Day(s) | Theme               | Key Skill                                                                                 | Status      |
-| ------ | ------------------- | ----------------------------------------------------------------------------------------- | ----------- |
-| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implementation in LifeLogger                     | ✅ Complete |
-| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series + Pandas/NumPy in LifeLogger | ✅ Complete |
+| Day(s) | Theme               | Key Skill                                                                                 | Status         |
+| ------ | ------------------- | ----------------------------------------------------------------------------------------- | -------------- |
+| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implementation in LifeLogger                     | ✅ Complete    |
+| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series + Pandas/NumPy in LifeLogger | ✅ Complete    |
+| Day 18 | Visualization       | Matplotlib — line, bar, hist & scatter plots on real sales data                           | 🔄 In Progress |
 
 ---
 
@@ -37,16 +38,26 @@
 
 ---
 
+### Day 18 — Matplotlib: Core Plotting on Real Data _(In Progress)_
+
+**Focus:** Getting hands-on with `matplotlib` using a real-world sales CSV dataset. Seaborn is up next but hasn't been touched yet.
+
+**Topics so far:** Loading & grouping data with Pandas (`groupby`, `reset_index`), then visualizing the results with `plt.plot()` (line), `plt.bar()` (bar with labels & rotation), `plt.hist()` (distribution), and `plt.scatter()` (scatter with custom markers) — including axis labels and titles.
+
+📁 Folder: `day 18/`
+
+---
+
 ## 🎯 Phase 1 Goals
 
 Building on the complete Python foundation from Phase 0, Phase 1 targets:
 
-| Area              | Topics to Cover                                           | Status       |
-| ----------------- | --------------------------------------------------------- | ------------ |
-| **NumPy**         | Arrays, linear algebra, broadcasting, masked arrays       | ✅ Done      |
-| **Pandas**        | DataFrames, cleaning, groupby, merging, time series       | ✅ Done      |
-| **Visualization** | `matplotlib`, `seaborn` — distributions, outliers, charts | ⬜ Coming up |
-| **Statistics**    | Probability, Z-scores, correlations (`scipy`)             | ⬜ Coming up |
-| **Capstone 2**    | The "Automated Analyst" — auto-report from any CSV        | ⬜ Coming up |
+| Area              | Topics to Cover                                           | Status         |
+| ----------------- | --------------------------------------------------------- | -------------- |
+| **NumPy**         | Arrays, linear algebra, broadcasting, masked arrays       | ✅ Done        |
+| **Pandas**        | DataFrames, cleaning, groupby, merging, time series       | ✅ Done        |
+| **Visualization** | `matplotlib`, `seaborn` — distributions, outliers, charts | 🔄 In Progress |
+| **Statistics**    | Probability, Z-scores, correlations (`scipy`)             | ⬜ Coming up   |
+| **Capstone 2**    | The "Automated Analyst" — auto-report from any CSV        | ⬜ Coming up   |
 
 > This section is updated day-by-day as Phase 1 progresses.
