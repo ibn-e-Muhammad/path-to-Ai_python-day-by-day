@@ -51,12 +51,11 @@ Every study day follows the same structure to fight the memory leak problem:
 **Goal:** You cannot model what you cannot clean.
 **Focus:** Pandas, NumPy, Visualization, Statistics.
 
-| Topic                      | The Real Task                                                                | Retention Check                                     |
-| -------------------------- | ---------------------------------------------------------------------------- | --------------------------------------------------- |
-| **5. NumPy & Vectors**     | Manually implement Mean Squared Error using numpy arrays — no loops allowed. | Speed test: Loop vs Vectorization.                  |
-| **6. Pandas Core**         | Load a messy dataset. Fix dates, handle NaNs, filter rows.                   | Do it without opening the CSV in Excel.             |
-| **7. EDA & Viz (Seaborn)** | Plot distributions. Find outliers. Write a paragraph explaining WHY.         | A chart without a conclusion is useless.            |
-| **8. Probability & Stats** | Generate a Normal Distribution in code. Calculate Z-scores for your data.    | Use `scipy` to prove if two columns are correlated. |
+| Topic                      | The Real Task                                                                | Retention Check                          |
+| -------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------- |
+| **5. NumPy & Vectors**     | Manually implement Mean Squared Error using numpy arrays — no loops allowed. | Speed test: Loop vs Vectorization.       |
+| **6. Pandas Core**         | Load a messy dataset. Fix dates, handle NaNs, filter rows.                   | Do it without opening the CSV in Excel.  |
+| **7. EDA & Viz (Seaborn)** | Plot distributions. Find outliers. Write a paragraph explaining WHY.         | A chart without a conclusion is useless. |
 
 🔥 **Capstone 2 — The "Automated Analyst"**
 
@@ -78,11 +77,11 @@ Every study day follows the same structure to fight the memory leak problem:
 
 | Topic                             | The Real Task                                                 | Retention Check                                  |
 | --------------------------------- | ------------------------------------------------------------- | ------------------------------------------------ |
-| **9. Linear/Logistic Regression** | Predict Housing Prices. Predict Diabetes.                     | Plot the Decision Boundary or Regression Line.   |
-| **10. Trees & Forests**           | Visualize a single Decision Tree. Then train a Random Forest. | Compare accuracy. Why did RF win? Write it down. |
-| **11. Boosting (XGBoost)**        | The holy grail of tabular data. Tune hyperparameters.         | Beat your Random Forest score.                   |
-| **12. Unsupervised (K-Means)**    | Cluster customers based on spending.                          | Visualize the clusters in 2D using PCA.          |
-| **13. Evaluation Metrics**        | Implement Precision/Recall manually.                          | Don't just trust `accuracy_score`.               |
+| **8. Linear/Logistic Regression** | Predict Housing Prices. Predict Diabetes.                     | Plot the Decision Boundary or Regression Line.   |
+| **9. Trees & Forests**           | Visualize a single Decision Tree. Then train a Random Forest. | Compare accuracy. Why did RF win? Write it down. |
+| **10. Boosting (XGBoost)**        | The holy grail of tabular data. Tune hyperparameters.         | Beat your Random Forest score.                   |
+| **11. Unsupervised (K-Means)**    | Cluster customers based on spending.                          | Visualize the clusters in 2D using PCA.          |
+| **12. Evaluation Metrics**        | Implement Precision/Recall manually.                          | Don't just trust `accuracy_score`.               |
 
 🔥 **Capstone 3 — The "Streamlit Predictor"**
 
@@ -104,9 +103,9 @@ Every study day follows the same structure to fight the memory leak problem:
 
 | Topic                       | The Real Task                                           | Retention Check                                 |
 | --------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
-| **14. Tensors & Gradients** | Manual Backpropagation (Micrograd style).               | Understand `requires_grad=True`.                |
-| **15. ANN — The Basics**    | Build a Feed-Forward net for MNIST (Digit recognition). | Plot the Loss Curve over epochs.                |
-| **16. Optimization**        | SGD vs Adam. Experiment with Learning Rates.            | Break the model (make it diverge), then fix it. |
+| **13. Tensors & Gradients** | Manual Backpropagation (Micrograd style).               | Understand `requires_grad=True`.                |
+| **14. ANN — The Basics**    | Build a Feed-Forward net for MNIST (Digit recognition). | Plot the Loss Curve over epochs.                |
+| **15. Optimization**        | SGD vs Adam. Experiment with Learning Rates.            | Break the model (make it diverge), then fix it. |
 
 🔥 **Capstone 4 — The "Digit Recognizer" from Scratch**
 
@@ -123,9 +122,9 @@ Every study day follows the same structure to fight the memory leak problem:
 
 | Topic                | The Real Task                             | Retention Check                                    |
 | -------------------- | ----------------------------------------- | -------------------------------------------------- |
-| **17. Embeddings**   | Word2Vec. Visualizing words in 3D space.  | Find the closest word to "King" − "Man" + "Woman". |
-| **18. RNN/LSTM/GRU** | Text Classification (Sentiment Analysis). | Why does Vanishing Gradient happen? Simulate it.   |
-| **19. Transformers** | The Attention Mechanism. HuggingFace.     | Fine-tune BERT on a custom dataset.                |
+| **16. Embeddings**   | Word2Vec. Visualizing words in 3D space.  | Find the closest word to "King" − "Man" + "Woman". |
+| **17. RNN/LSTM/GRU** | Text Classification (Sentiment Analysis). | Why does Vanishing Gradient happen? Simulate it.   |
+| **18. Transformers** | The Attention Mechanism. HuggingFace.     | Fine-tune BERT on a custom dataset.                |
 
 🔥 **Capstone 5 — The "Context Chatbot"**
 
@@ -145,9 +144,9 @@ Every study day follows the same structure to fight the memory leak problem:
 
 | Topic                     | The Real Task                                                    | Retention Check                                      |
 | ------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------- |
-| **20. CNNs**              | Build a ConvNet for CIFAR-10 (Image classification).             | Visualize the "Feature Maps" (what the filter sees). |
-| **21. Transfer Learning** | Use ResNet50. Fine-tune it to classify "Hot Dog vs Not Hot Dog". | Freeze layers vs Unfreeze layers.                    |
-| **22. Object Detection**  | YOLO (You Only Look Once). Detect cars in video.                 | Draw bounding boxes in real-time.                    |
+| **19. CNNs**              | Build a ConvNet for CIFAR-10 (Image classification).             | Visualize the "Feature Maps" (what the filter sees). |
+| **20. Transfer Learning** | Use ResNet50. Fine-tune it to classify "Hot Dog vs Not Hot Dog". | Freeze layers vs Unfreeze layers.                    |
+| **21. Object Detection**  | YOLO (You Only Look Once). Detect cars in video.                 | Draw bounding boxes in real-time.                    |
 
 🔥 **Capstone 6 — The "Vision Security System"**
 

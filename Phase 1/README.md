@@ -6,11 +6,12 @@
 
 ## 🗺️ Phase Overview
 
-| Day(s) | Theme               | Key Skill                                                                                 | Status         |
-| ------ | ------------------- | ----------------------------------------------------------------------------------------- | -------------- |
-| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implementation in LifeLogger                     | ✅ Complete    |
-| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series + Pandas/NumPy in LifeLogger | ✅ Complete    |
-| Day 18 | Visualization       | Matplotlib — line, bar, hist & scatter plots on real sales data                           | 🔄 In Progress |
+| Day(s) | Theme               | Key Skill                                                                                 | Status      |
+| ------ | ------------------- | ----------------------------------------------------------------------------------------- | ----------- |
+| Day 16 | Numerical Computing | NumPy — arrays, linear algebra, masking, implementation in LifeLogger                     | ✅ Complete |
+| Day 17 | Data Manipulation   | Pandas — DataFrames, cleaning, groupby, merging, time series + Pandas/NumPy in LifeLogger | ✅ Complete |
+| Day 18 | Visualization       | Matplotlib & Seaborn — distributions, relational & categorical plots, heatmaps            | ✅ Complete |
+| Day 19 | Capstone Project 2  | The Automated Analyst — auto-report pipeline scanning for CSV data                        | ✅ Complete |
 
 ---
 
@@ -38,13 +39,23 @@
 
 ---
 
-### Day 18 — Matplotlib: Core Plotting on Real Data _(In Progress)_
+### Day 18 — Matplotlib & Seaborn: Real Data & Statistical Plotting
 
-**Focus:** Getting hands-on with `matplotlib` using a real-world sales CSV dataset. Seaborn is up next but hasn't been touched yet.
+**Focus:** Getting hands-on with data visualization pipelines using `matplotlib` and `seaborn`.
 
-**Topics so far:** Loading & grouping data with Pandas (`groupby`, `reset_index`), then visualizing the results with `plt.plot()` (line), `plt.bar()` (bar with labels & rotation), `plt.hist()` (distribution), and `plt.scatter()` (scatter with custom markers) — including axis labels and titles.
+**Topics:** Loading & grouping sales data with Pandas to visualize with Matplotlib `plot`, `bar`, `hist`, and `scatter`. Loading the seaborn `tips` dataset to generate statistical visualizations natively: `scatterplot`, `lineplot`, `barplot`, `boxplot`, `violinplot`, `histplot`, `kdeplot`, `pairplot`, and a correlation `heatmap`.
 
 📁 Folder: `day 18/`
+
+---
+
+### Day 19 — Capstone Project 2: The Automated Analyst
+
+**Focus:** Applying Python file handling and data analysis skills to build an automated application.
+
+**Topics:** Programmatically using `pathlib` to scan an `incoming_data/` directory for raw CSVs. Orchestrating a pipeline where a `FileProcessor` ingests the data into Pandas DataFrames and a `ReportGenerator` calculates and logs statistical descriptions dynamically.
+
+📁 Folder: `day 19 Capstone Project 2/`
 
 ---
 
@@ -52,12 +63,11 @@
 
 Building on the complete Python foundation from Phase 0, Phase 1 targets:
 
-| Area              | Topics to Cover                                           | Status         |
-| ----------------- | --------------------------------------------------------- | -------------- |
-| **NumPy**         | Arrays, linear algebra, broadcasting, masked arrays       | ✅ Done        |
-| **Pandas**        | DataFrames, cleaning, groupby, merging, time series       | ✅ Done        |
-| **Visualization** | `matplotlib`, `seaborn` — distributions, outliers, charts | 🔄 In Progress |
-| **Statistics**    | Probability, Z-scores, correlations (`scipy`)             | ⬜ Coming up   |
-| **Capstone 2**    | The "Automated Analyst" — auto-report from any CSV        | ⬜ Coming up   |
+| Area              | Topics to Cover                                           | Status       |
+| ----------------- | --------------------------------------------------------- | ------------ |
+| **NumPy**         | Arrays, linear algebra, broadcasting, masked arrays       | ✅ Done      |
+| **Pandas**        | DataFrames, cleaning, groupby, merging, time series       | ✅ Done      |
+| **Visualization** | `matplotlib`, `seaborn` — distributions, outliers, charts | ✅ Done      |
+| **Capstone 2**    | The "Automated Analyst" — auto-report from any CSV        | ✅ Done      |
 
 > This section is updated day-by-day as Phase 1 progresses.

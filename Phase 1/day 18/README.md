@@ -1,51 +1,43 @@
-# Day 18: Visualization — Matplotlib _(In Progress)_
+# Day 18: Visualization — Matplotlib & Seaborn
 
 ## Overview
 
-Day 18 is the start of the visualization chapter. The plan is to cover both **Matplotlib** and **Seaborn** — but Seaborn hasn't been touched yet. So far, this day is all about getting comfortable with `matplotlib.pyplot` using a real-world sales dataset (`sales_data.csv`). Instead of generating random numbers, actual CSV data was loaded with Pandas, aggregated with `groupby`, and then plotted four different ways to see what sticks visually.
+Day 18 covers the visualization chapter. The focus is on getting comfortable with both **Matplotlib** and **Seaborn**, moving from base plots on a sales CSV to advanced statistical plotting on Seaborn's built-in `tips` dataset. By the end of this practice, we covered 9 different plot types: line plots, bar charts, histograms, scatter plots, KDE plots, box plots, violin plots, pair plots, and correlation heatmaps.
 
 ---
 
-## Key Concepts Covered (so far)
+## Key Concepts Covered
 
 ### 1. Loading & Preparing Data for Plotting
 
-- Reading a CSV into a DataFrame: `pd.read_csv('sample_data/sales_data.csv')`
-- Inspecting data with `.head()` and `.info()` before doing anything with it
-- Aggregating for plotting: `df.groupby('Product Category')['Total Revenue'].sum().reset_index()`
-- The `reset_index()` call turns the groupby result back into a proper flat DataFrame — necessary when you want to pass columns directly to a plot
+- Reading a CSV into a DataFrame (`pd.read_csv`) and a built-in Seaborn dataset (`sns.load_dataset('tips')`)
+- Aggregating for plotting: `df.groupby(...)[...].sum().reset_index()`
+- The `reset_index()` call turns the groupby result back into a proper flat DataFrame — necessary when you want to pass columns directly to a plot.
 
-### 2. Line Plot (`plt.plot()`)
+### 2. Matplotlib Fundamentals
 
-- Basic line chart mapping categorical product categories to their total revenue
-- Useful for spotting trends across ordered categories
+- **Line Plot (`plt.plot()`)**: Basic charting mapping categories to values.
+- **Bar Chart (`plt.bar()`)**: Vertical bars comparing groups, with rotated x-axis labels (`plt.xticks(rotation=30)`) to prevent overlap. Used `xlabel`, `ylabel`, and `title` to label graphs clearly.
+- **Histogram (`plt.hist()`)**: Visualizing distributions using custom bins.
+- **Scatter Plot (`plt.scatter()`)**: Mapping data as individual points, customized with marker shapes (`marker="*"`) and colors.
 
-### 3. Bar Chart (`plt.bar()`)
+### 3. Seaborn Statistical Plotting
 
-- `plt.bar(x, y, color='teal')` — vertical bars comparing revenue across product categories
-- `plt.xticks(rotation=30)` — rotated x-axis labels so the category names don't overlap
-- Added proper axis labels with `plt.xlabel()`, `plt.ylabel()`, and a descriptive `plt.title()`
-
-### 4. Histogram (`plt.hist()`)
-
-- `plt.hist(data, color='pink', bins=10)` — shows the distribution of revenue values across the bins
-- Useful for understanding the spread and frequency of data rather than comparing categories
-
-### 5. Scatter Plot (`plt.scatter()`)
-
-- `plt.scatter(x, y, color='teal', marker='*')` — maps categories to revenue as individual points with a custom star marker
-- `plt.xticks(rotation=30)` again to handle the label overlap on the x-axis
-
----
-
-## What's Next
-
-- **Seaborn** — distributions (`histplot`, `kdeplot`), relationships (`scatterplot`, `pairplot`), and categorical summaries (`boxplot`, `violinplot`)
-- More plot customization: figure sizing, subplots, legends, and styling
+- **Relational Plots**: Recreated scatter plots (`sns.scatterplot`) and line plots (`sns.lineplot`) using Seaborn's cleaner API mapped directly to DataFrame column names (e.g., `x="size", y="total_bill", data=tips`).
+- **Categorical Distributions**:
+  - **Bar Plot (`sns.barplot`)**: Automatically handles grouped calculations with error bars.
+  - **Box Plot (`sns.boxplot`)**: Identifying outliers and quartiles for tipping across different days.
+  - **Violin Plot (`sns.violinplot`)**: Combining a box plot with a kernel density output to show the shape of the data grouped by category (e.g., tip sizes by `sex`).
+- **Continuous Distributions**:
+  - **Histplot (`sns.histplot`)**: Layered frequency bars with an optional KDE line overlay (`kde=True`).
+  - **KDE Plot (`sns.kdeplot`)**: Filled kernel density estimation plots.
+- **Multi-Variable Analytics**:
+  - **Pair Plot (`sns.pairplot()`)**: Automatically creating a grid of scatter plots comparing every numerical column against each other.
+  - **Heatmap (`sns.heatmap()`)**: Visualizing the correlation matrix (`df.corr()`) of numerical variables with text annotations (`annot=True`) to immediately see the strength of relationships.
 
 ---
 
 ## Code Files
 
-- `practice.ipynb`: Matplotlib practice — data loading, groupby, and 4 chart types on sales data
-- `sample_data/sales_data.csv`: Real-world sales dataset used for all plots
+- `practice.ipynb`: Matplotlib & Seaborn practice — data loading, groupby, and 9 different chart types.
+- `sample_data/sales_data.csv`: Real-world sales dataset used for matplotlib plots.
