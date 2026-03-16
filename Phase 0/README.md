@@ -1,4 +1,3 @@
-
 ---
 
 # Phase 0 — Python Foundations & Data Engineering (Days 1–15)
@@ -157,7 +156,7 @@
 
 - **Classes & Objects** — Defining `DataProcessor` and `TextCleaner` blueprints and creating instances
 - **Constructors (`__init__`)** — Initializing object state at creation time
-- **Methods** — Encapsulating logic inside class functions
+- **Methods** — Encapsulating logic inside class functions: `count_positive()`, `safe_average()` (handles `ZeroDivisionError`), and `get_extreme_values()` returning a `(max, min)` tuple
 - **Logging Module** — Replacing `print()` with `logging`; configuring levels (INFO, ERROR), message formats, and file output (`app.log`)
 - **Refactoring** — Converting standalone functions into class methods
 - **List Comprehensions** — Writing clean, concise data-cleaning loops
@@ -178,7 +177,7 @@
 - **Type Checking** — Using `isinstance()` to validate input data types inside constructors
 - **Extending Classes** — Adding new capabilities (`calculate_median`) to child classes
 
-📁 Files: `day10_processors.py`, `day10_advanced_processors.py`, `day10_main.py`, `exceptions.py`
+📁 Files: `day10_processors.py`, `day10_advanced_processors.py`, `day10_cleaners.py`, `day10_main.py`, `exceptions.py`
 
 ---
 
@@ -221,7 +220,7 @@
 - **Extensive Logging** — Every database event (success and failure) logged for production-grade debugging
 - **Structured Storage** — Calculated statistics (`positives_count`, `average`, `min`, `max`) saved to `Processed_Data` table
 
-📁 Files: `day14_database_methods.py`, `day14_processors.py`, `day14_main.py`
+📁 Files: `day14_base_processor.py`, `day14_database_methods.py`, `day14_processors.py`, `day14_main.py`, `exceptions.py`
 
 ---
 

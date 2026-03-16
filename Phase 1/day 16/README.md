@@ -81,6 +81,18 @@ Assignment 10 (Masked Arrays) required AI help — the `numpy.ma` API has many s
 - `practice.ipynb`: All 10 NumPy assignments with outputs
 - `day16_main.py`: LifeLogger entry point (carried over from Phase 0)
 - `day16_data_collector.py`: `DataCollector` class for user input and validation
-- `day16_database_methods.py`: SQLite database handler for LifeLogger logging
+- `day16_database_methods.py`: SQLite database handler for LifeLogger — upgraded with NumPy integration
 - `exceptions.py`: Custom exception classes for the project
 - `app.log`: Runtime log output from the LifeLogger application
+
+---
+
+## LifeLogger Integration
+
+As Day 16 introduced NumPy, the `DatabaseHandler` in `day16_database_methods.py` was upgraded from Phase 0:
+
+- **`display_data()`** now extracts the `Time` column from raw sqlite3 tuple results using a list comprehension and wraps it in `np.array([row[2] for row in rows], dtype=float)` — converting it to a NumPy array for downstream calculations.
+- **`calculate_stats(time_array)`** — a new method added to the handler that operates on the returned NumPy array:
+  - `np.sum(time_array)` → total hours logged across all sessions
+  - `np.mean(time_array)` → average time per session
+- `DataCollector.display_stored_data()` now chains both: calls `display_data()` to get the array, then passes it directly to `calculate_stats()`.

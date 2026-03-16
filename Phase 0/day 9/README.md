@@ -9,7 +9,7 @@ This folder contains the code for Day 9, marking the transition to Object-Orient
 - **Object-Oriented Programming (OOP)**:
   - **Classes and Objects**: Defining blueprints (`DataProcessor`, `TextCleaner`) and creating instances.
   - **Constructors**: Using `__init__` to initialize object state.
-  - **Methods**: Encapsulating logic within class functions.
+  - **Methods**: Encapsulating logic within class functions — `count_positive()` counts positives in the list, `safe_average()` handles `ZeroDivisionError`, and `get_extreme_values()` returns a `(max, min)` tuple for the dataset.
 - **Logging**:
   - Replacing `print` statements with the `logging` module.
   - Configuring log levels (INFO, ERROR), formats, and file outputs (`app.log`).

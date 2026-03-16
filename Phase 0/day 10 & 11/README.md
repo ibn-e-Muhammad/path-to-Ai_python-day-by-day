@@ -16,7 +16,8 @@ This folder contains the code for Days 10 and 11, focusing on advanced Object-Or
 
 ## Code Files
 
-- `day10_processors.py`: Base class `DataProcessor` with initialization and basic stats.
+- `day10_processors.py`: Base class `DataProcessor` with initialization, type-checking, magic methods, and basic stats.
 - `day10_advanced_processors.py`: Child class `AdvancedDataProcessor` extending the base class.
+- `day10_cleaners.py`: `TextCleaner` class with updated `isinstance()` validation and `InvalidDataError` handling.
 - `day10_main.py`: Main script to test inheritance and error handling.
 - `exceptions.py`: Custom exception definitions.
